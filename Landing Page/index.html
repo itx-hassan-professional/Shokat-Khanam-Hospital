@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="upperNavBar">
             <ul>
                 <li>
                     <div class="logo">
@@ -20,9 +20,9 @@
                 <li>
                     <div class="nav_links">
                         <div class="nav_links_top">
-                            <a href="#">Contact Us</a>
+                            <a href="#">Contact Us</a><span>|</span>
                             <a href="#">Lab Services</a>
-                            <button>Donate Now</button>
+                            <button id="donateBtn">Donate Now</button>
                             <ul class="social-links">
                                 <li>
                                     <button class="fbLogo">
@@ -59,11 +59,21 @@
                             </ul>
                         </div>
                         <div id="searchBar">
-                            <input type="text" placeholder="Search" />
-                            <button>🔍</button>
+                            <input id="searchBarInput" type="text" placeholder="Search" />
+                            <button id="searchBarBtn">🔍</button>
                         </div>
                     </div>
                 </li>
+            </ul>
+        </nav>
+        <nav class="lowerNavBar">
+            <ul>
+                <li><a>About Us</a></li>
+                <li><a>Patient & Families</a></li>
+                <li><a>Our Network</a></li>
+                <li><a>Healthcare Professionals & Researchers</a></li>
+                <li><a>Donors</a></li>
+                <li><a>Join Us</a></li>
             </ul>
         </nav>
     </header>

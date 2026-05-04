@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
 
 header ul {
@@ -15,16 +16,86 @@ header ul {
     align-items: center;
     padding: 10px 20px;
 }
-
+.upperNavBar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
 .nav_links{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
 .nav_links_top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+.nav_links_top a{
+    text-decoration: none;
+    color: black;
+}
+.nav_links_top a:hover{
+    color: #e62e04;
+}
+#donateBtn{
+    background-color: #e62e04;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.social-links button{
+    border: none;
+    cursor: pointer;
+}
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#searchBarInput{
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: rgb(245, 244, 244);
+    cursor: pointer;
+}
+#searchBarInput:hover{
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: text;
+}
+#searchBarBtn{
+    border: none;
+    background: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateX(-30px);
+    font-size: 20px;
+}
+.lowerNavBar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e62e04;
+    gap: 0px;
+}
+.lowerNavBar li{
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
