@@ -47,3 +47,12 @@ tkLogo.addEventListener("mouseenter", () => {
 tkLogo.addEventListener("mouseleave", () => {
     tkLogoImg.src = "../Assets/tiktok B&W logo.jpg"
 })
+
+// ===== HAMBURGER MENU TOGGLE =====
+const hamburgerBtn = document.getElementById("hamburgerBtn")
+const navLinks = document.querySelector(".nav_links")
+
+hamburgerBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active")
+    hamburgerBtn.textContent = navLinks.classList.contains("active") ? "✕" : "☰"
+})
