@@ -48,11 +48,66 @@ tkLogo.addEventListener("mouseleave", () => {
     tkLogoImg.src = "../Assets/tiktok B&W logo.jpg"
 })
 
-// ===== HAMBURGER MENU TOGGLE =====
-const hamburgerBtn = document.getElementById("hamburgerBtn")
-const navLinks = document.querySelector(".nav_links")
+const AboutUsBtn = document.getElementsByClassName("AboutUsBtn")[0]
+const PatientBtn = document.getElementsByClassName("PatientBtn")[0]
+const OurNetworkBtn = document.getElementsByClassName("OurNetworkBtn")[0]
+const HealthcareBtn = document.getElementsByClassName("HealthcareBtn")[0]
+const DonorsBtn = document.getElementsByClassName("DonorsBtn")[0]
+const JoinUsBtn = document.getElementsByClassName("JoinUsBtn")[0]
 
-hamburgerBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active")
-    hamburgerBtn.textContent = navLinks.classList.contains("active") ? "✕" : "☰"
+const AboutUsDiv = document.getElementsByClassName("AboutUsDiv")[0]
+const PatientDiv = document.getElementsByClassName("PatientDiv")[0]
+const OurNetworkDiv = document.getElementsByClassName("OurNetworkDiv")[0]
+const HealthcareDiv = document.getElementsByClassName("HealthcareDiv")[0]
+const DonorsDiv = document.getElementsByClassName("DonorsDiv")[0]
+const JoinUsDiv = document.getElementsByClassName("JoinUsDiv")[0]
+
+
+AboutUsBtn.addEventListener("mouseenter", () => {
+    AboutUsDiv.classList.remove("hidden")
+    AboutUsDiv.style.display = "flex"
+})
+AboutUsBtn.addEventListener("mouseleave", () => {
+    AboutUsDiv.classList.add("hidden")
+    AboutUsDiv.style.display = "none"
+})
+PatientBtn.addEventListener("mouseenter", () => {
+    PatientDiv.classList.remove("hidden")
+    PatientDiv.style.display = "flex"
+})
+PatientBtn.addEventListener("mouseleave", () => {
+    PatientDiv.classList.add("hidden")
+    PatientDiv.style.display = "none"
+})
+OurNetworkBtn.addEventListener("mouseenter", () => {
+    OurNetworkDiv.classList.remove("hidden")
+    OurNetworkDiv.style.display = "flex"
+})
+OurNetworkBtn.addEventListener("mouseleave", () => {
+    OurNetworkDiv.classList.add("hidden")
+    OurNetworkDiv.style.display = "none"
+})
+HealthcareBtn.addEventListener("mouseenter", () => {
+    HealthcareDiv.classList.remove("hidden")
+    HealthcareDiv.style.display = "flex"
+})
+HealthcareBtn.addEventListener("mouseleave", () => {
+    HealthcareDiv.classList.add("hidden")
+    HealthcareDiv.style.display = "none"
+})
+DonorsBtn.addEventListener("mouseenter", () => {
+    DonorsDiv.classList.remove("hidden")
+    DonorsDiv.style.display = "flex"
+})
+DonorsBtn.addEventListener("mouseleave", () => {
+    DonorsDiv.classList.add("hidden")
+    DonorsDiv.style.display = "none"
+})
+JoinUsBtn.addEventListener("mouseenter", () => {
+    JoinUsDiv.classList.remove("hidden")
+    JoinUsDiv.style.display = "flex"
+})
+JoinUsBtn.addEventListener("mouseleave", () => {
+    JoinUsDiv.classList.add("hidden")
+    JoinUsDiv.style.display = "none"
 })
