@@ -130,27 +130,18 @@ header ul {
 }
 
 /* ===== LOWER NAV BAR ===== */
-.lowerNavBar ul,
-.lowerNavBar button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 30px;
+.lowerNavBar ul{
+    list-style: none;
     background-color: #d32802;
-    gap: 0px;
-    border: none;
-    color: white;
-    font-weight: bold;
 }
 
-.lowerNavBar li {
+.lowerNavBar ul button{
+    padding: 15px 55px;
+    background-color: transparent;
     color: white;
-    padding: 10px 20px;
     cursor: pointer;
-    font-weight: bold;
-    border-left: white solid 2px;
-    display: flex;
-    white-space: nowrap;
+    border: none;
+    border-right: white solid 2px;
 }
 
 .lowerNavBar li:last-child {
@@ -162,7 +153,7 @@ header ul {
     background-color: white;
     color: red;
     font-weight: bold;
-    padding: 30px;
+    position: relative;
 }
 .nav-Assistant .AboutUsDiv,
 .nav-Assistant .PatientDiv,
@@ -171,7 +162,13 @@ header ul {
 .nav-Assistant .DonorsDiv,
 .nav-Assistant .JoinUsDiv{
     margin-top: 20px;
+    padding: 20px;
     position: absolute;
+    width: 100%;
+    background-color: white;
+    top: -20px;
+    z-index: 1000;
+    height: auto;
 }
 
 .nav-Assistant .AboutUsDiv .links,

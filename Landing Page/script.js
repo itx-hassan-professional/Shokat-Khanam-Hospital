@@ -1,52 +1,40 @@
-const fbLogo = document.getElementsByClassName("fbLogo")[0]
-const fbLogoImg = document.getElementsByClassName("fbLogo")[1]
-const inLogo = document.getElementsByClassName("inLogo")[0]
-const inLogoImg = document.getElementsByClassName("inLogo")[1]
-const xLogo = document.getElementsByClassName("xLogo")[0]
-const xLogoImg = document.getElementsByClassName("xLogo")[1]
-const ytLogo = document.getElementsByClassName("ytLogo")[0]
-const ytLogoImg = document.getElementsByClassName("ytLogo")[1]
-const liLogo = document.getElementsByClassName("liLogo")[0]
-const liLogoImg = document.getElementsByClassName("liLogo")[1]
-const tkLogo = document.getElementsByClassName("tkLogo")[0]
-const tkLogoImg = document.getElementsByClassName("tkLogo")[1]
+const fbBtn = document.getElementsByClassName("fbLogo")[0]
+const inBtn = document.getElementsByClassName("inLogo")[0]
+const xBtn = document.getElementsByClassName("xLogo")[0]
+const ytBtn = document.getElementsByClassName("ytLogo")[0]
+const liBtn = document.getElementsByClassName("liLogo")[0]
+const tkBtn = document.getElementsByClassName("tkLogo")[0]
+const fbImg = document.getElementsByClassName("fbLogo")[1]
+const inImg = document.getElementsByClassName("inLogo")[1]
+const xImg = document.getElementsByClassName("xLogo")[1]
+const ytImg = document.getElementsByClassName("ytLogo")[1]
+const liImg = document.getElementsByClassName("liLogo")[1]
+const tkImg = document.getElementsByClassName("tkLogo")[1]
 
-fbLogo.addEventListener("mouseenter", () => {
-    fbLogoImg.src = "../Assets/facebook colored logo.webp"
-})
-fbLogo.addEventListener("mouseleave", () => {
-    fbLogoImg.src = "../Assets/facebook B&W logo.webp"
-})
-inLogo.addEventListener("mouseenter", () => {
-    inLogoImg.src = "../Assets/instagram colored logo.avif"
-})
-inLogo.addEventListener("mouseleave", () => {
-    inLogoImg.src = "../Assets/instagram B&W logo.png"
-})
-xLogo.addEventListener("mouseenter", () => {
-    xLogoImg.src = "../Assets/X colored logo.jpg"
-})
-xLogo.addEventListener("mouseleave", () => {
-    xLogoImg.src = "../Assets/X B&W logo.jpg"
-})
-ytLogo.addEventListener("mouseenter", () => {
-    ytLogoImg.src = "../Assets/youtube colored logo.webp"
-})
-ytLogo.addEventListener("mouseleave", () => {
-    ytLogoImg.src = "../Assets/youtube B&W logo.webp"
-})
-liLogo.addEventListener("mouseenter", () => {
-    liLogoImg.src = "../Assets/linkedIn colored logo.png"
-})
-liLogo.addEventListener("mouseleave", () => {
-    liLogoImg.src = "../Assets/linkedIn B&W logo.jpg"
-})
-tkLogo.addEventListener("mouseenter", () => {
-    tkLogoImg.src = "../Assets/tiktok colored logo.png"
-})
-tkLogo.addEventListener("mouseleave", () => {
-    tkLogoImg.src = "../Assets/tiktok B&W logo.jpg"
-})
+const btn = [fbBtn, inBtn, xBtn, ytBtn, liBtn, tkBtn]
+const img = [fbImg, inImg, xImg, ytImg, liImg, tkImg]
+const bwImgs = ["../Assets/facebook B&W logo.webp", "../Assets/instagram B&W logo.png", "../Assets/X B&W logo.jpg", "../Assets/youtube B&W logo.webp", "../Assets/linkedIn B&W logo.jpg", "../Assets/tiktok B&W logo.jpg"]
+const coloredImgs = ["../Assets/facebook colored logo.webp", "../Assets/instagram colored logo.avif", "../Assets/X colored logo.jpg", "../Assets/youtube colored logo.webp", "../Assets/linkedIn colored logo.png", "../Assets/tiktok colored logo.png"]
+
+for(let i = 0; i < bwImgs.length; i++){
+    btn[i].addEventListener("mouseenter",()=>{
+        img[i].src = coloredImgs[i]
+        if(i >= 0){
+            for(let j = i-1; j >= 0; j--){
+                img[j].src = bwImgs[j]
+            }
+            for(let j = i+1; j < img.length; j++){
+                img[j].src = bwImgs[j]
+            }
+        }
+    })
+
+    btn[i].addEventListener("mouseleave",()=>{
+        img[i].src = bwImgs[i]
+    })
+}
+
+
 
 const AboutUsBtn = document.getElementsByClassName("AboutUsBtn")[0]
 const PatientBtn = document.getElementsByClassName("PatientBtn")[0]
@@ -61,53 +49,49 @@ const OurNetworkDiv = document.getElementsByClassName("OurNetworkDiv")[0]
 const HealthcareDiv = document.getElementsByClassName("HealthcareDiv")[0]
 const DonorsDiv = document.getElementsByClassName("DonorsDiv")[0]
 const JoinUsDiv = document.getElementsByClassName("JoinUsDiv")[0]
+const NavAssit = document.getElementsByClassName("nav-Assistant")[0]
+const NavBtns = [AboutUsBtn, PatientBtn, OurNetworkBtn, HealthcareBtn, DonorsBtn, JoinUsBtn]
+const NavDivs = [AboutUsDiv, PatientDiv, OurNetworkDiv, HealthcareDiv, DonorsDiv, JoinUsDiv]
 
+for(let i = 0; i < NavBtns.length; i++){
+    NavBtns[i].addEventListener("mouseenter",()=>{
+        NavDivs[i].classList.remove("hidden")
+        NavDivs[i].style.display = "flex"
+        if(i >= 0){
+            for(let j = i-1; j >= 0; j--){
+                NavDivs[j].classList.add("hidden")
+                NavDivs[j].style.display = "none"
+            }
+            for(let j = i+1; j < NavBtns.length; j++){
+                NavDivs[j].classList.add("hidden")
+                NavDivs[j].style.display = "none"
+            }
+        }
+    })
+    NavAssit.addEventListener("mouseleave",()=>{
+        NavDivs[i].classList.add("hidden")
+        NavDivs[i].style.display = "none"
 
-AboutUsBtn.addEventListener("mouseenter", () => {
-    AboutUsDiv.classList.remove("hidden")
-    AboutUsDiv.style.display = "flex"
-})
-AboutUsBtn.addEventListener("mouseleave", () => {
-    AboutUsDiv.classList.add("hidden")
-    AboutUsDiv.style.display = "none"
-})
-PatientBtn.addEventListener("mouseenter", () => {
-    PatientDiv.classList.remove("hidden")
-    PatientDiv.style.display = "flex"
-})
-PatientBtn.addEventListener("mouseleave", () => {
-    PatientDiv.classList.add("hidden")
-    PatientDiv.style.display = "none"
-})
-OurNetworkBtn.addEventListener("mouseenter", () => {
-    OurNetworkDiv.classList.remove("hidden")
-    OurNetworkDiv.style.display = "flex"
-})
-OurNetworkBtn.addEventListener("mouseleave", () => {
-    OurNetworkDiv.classList.add("hidden")
-    OurNetworkDiv.style.display = "none"
-})
-HealthcareBtn.addEventListener("mouseenter", () => {
-    HealthcareDiv.classList.remove("hidden")
-    HealthcareDiv.style.display = "flex"
-})
-HealthcareBtn.addEventListener("mouseleave", () => {
-    HealthcareDiv.classList.add("hidden")
-    HealthcareDiv.style.display = "none"
-})
-DonorsBtn.addEventListener("mouseenter", () => {
-    DonorsDiv.classList.remove("hidden")
-    DonorsDiv.style.display = "flex"
-})
-DonorsBtn.addEventListener("mouseleave", () => {
-    DonorsDiv.classList.add("hidden")
-    DonorsDiv.style.display = "none"
-})
-JoinUsBtn.addEventListener("mouseenter", () => {
-    JoinUsDiv.classList.remove("hidden")
-    JoinUsDiv.style.display = "flex"
-})
-JoinUsBtn.addEventListener("mouseleave", () => {
-    JoinUsDiv.classList.add("hidden")
-    JoinUsDiv.style.display = "none"
-})
+    })
+    NavDivs[i].addEventListener("mouseleave",()=>{
+        NavDivs[i].classList.add("hidden")
+        NavDivs[i].style.display = "none"
+    })
+    NavDivs[i].addEventListener("mouseenter",()=>{
+        NavDivs[i].classList.remove("hidden")
+        NavDivs[i].style.display = "flex"
+        if(i >= 0){
+            for(let j = i-1; j >= 0; j--){
+                NavDivs[j].classList.add("hidden")
+                NavDivs[j].style.display = "none"
+                console.log(j)
+            }
+            for(let j = i+1; j < NavBtns.length; j++){
+                NavDivs[j].classList.add("hidden")
+                NavDivs[j].style.display = "none"
+                console.log(j)
+            }
+        }
+    })
+}
+
