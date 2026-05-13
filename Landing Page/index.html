@@ -1,273 +1,281 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shaukat Khanum Memorial Cancer Hospital & Research Centre</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="upperNavBar">
-        <button
-          class="hamburger"
-          id="hamburgerBtn"
-          aria-label="Toggle navigation"
-        >
-          ☰
-        </button>
-        <ul>
-          <li>
-            <div class="logo">
-              <img src="../Assets/SKMT Logo.webp" alt="SKMT Logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaukat Khanum Memorial Cancer Hospital & Research Centre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="upperNavBar">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <ul>
+        <li>
+          <div class="logo">
+            <img src="../Assets/SKMT Logo.webp" alt="SKMT Logo" />
+          </div>
+        </li>
+        <li>
+          <div class="nav_links">
+            <div class="nav_links_top">
+              <a href="#">Contact Us</a><span>|</span>
+              <a href="#">Lab Services</a>
+              <button id="donateBtn">Donate Now</button>
+              <ul class="social-links">
+                <li>
+                  <button class="fbLogo">
+                    <img class="fbLogo" src="../Assets/facebook B&W logo.webp" width="30px" alt="" />
+                  </button>
+                </li>
+                <li>
+                  <button class="inLogo">
+                    <img class="inLogo" src="../Assets/instagram B&W logo.png" width="30px" alt="" />
+                  </button>
+                </li>
+                <li>
+                  <button class="xLogo">
+                    <img class="xLogo" src="../Assets/X B&W logo.jpg" width="30px" alt="" />
+                  </button>
+                </li>
+                <li>
+                  <button class="ytLogo">
+                    <img class="ytLogo" src="../Assets/youtube B&W logo.webp" width="30px" alt="" />
+                  </button>
+                </li>
+                <li>
+                  <button class="liLogo">
+                    <img class="liLogo" src="../Assets/linkedIn B&W logo.jpg" width="30px" alt="" />
+                  </button>
+                </li>
+                <li>
+                  <button class="tkLogo">
+                    <img class="tkLogo" src="../Assets/tiktok B&W logo.jpg" width="30px" alt="" />
+                  </button>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li>
-            <div class="nav_links">
-              <div class="nav_links_top">
-                <a href="#">Contact Us</a><span>|</span>
-                <a href="#">Lab Services</a>
-                <button id="donateBtn">Donate Now</button>
-                <ul class="social-links">
-                  <li>
-                    <button class="fbLogo">
-                      <img
-                        class="fbLogo"
-                        src="../Assets/facebook B&W logo.webp"
-                        width="30px"
-                        alt=""
-                      />
-                    </button>
-                  </li>
-                  <li>
-                    <button class="inLogo">
-                      <img
-                        class="inLogo"
-                        src="../Assets/instagram B&W logo.png"
-                        width="30px"
-                        alt=""
-                      />
-                    </button>
-                  </li>
-                  <li>
-                    <button class="xLogo">
-                      <img
-                        class="xLogo"
-                        src="../Assets/X B&W logo.jpg"
-                        width="30px"
-                        alt=""
-                      />
-                    </button>
-                  </li>
-                  <li>
-                    <button class="ytLogo">
-                      <img
-                        class="ytLogo"
-                        src="../Assets/youtube B&W logo.webp"
-                        width="30px"
-                        alt=""
-                      />
-                    </button>
-                  </li>
-                  <li>
-                    <button class="liLogo">
-                      <img
-                        class="liLogo"
-                        src="../Assets/linkedIn B&W logo.jpg"
-                        width="30px"
-                        alt=""
-                      />
-                    </button>
-                  </li>
-                  <li>
-                    <button class="tkLogo">
-                      <img
-                        class="tkLogo"
-                        src="../Assets/tiktok B&W logo.jpg"
-                        width="30px"
-                        alt=""
-                      />
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div id="searchBar">
-                <input id="searchBarInput" type="text" placeholder="Search" />
-                <button id="searchBarBtn">🔍</button>
-              </div>
+            <div id="searchBar">
+              <input id="searchBarInput" type="text" placeholder="Search" />
+              <button id="searchBarBtn">🔍</button>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <nav class="lowerNavBar">
-        <ul>
-          <li><button class="AboutUsBtn">About Us ﹀</button></li>
-          <li><button class="PatientBtn">Patient & Families ﹀</button></li>
-          <li><button class="OurNetworkBtn">Our Network ﹀</button></li>
-          <li><button class="HealthcareBtn">Healthcare Professionals & Researchers ﹀</button></li>
-          <li><button class="DonorsBtn">Donors ﹀</button></li>
-          <li><button class="JoinUsBtn">Join Us ﹀</button></li>
-        </ul>
-      </nav>
-      <div class="nav-Assistant">
-        <div class="AboutUsDiv hidden">
-          <img src="../Assets/AboutUs nav-link.webp" width="350px" alt="">
-          <div class="links">
-            <ul>
-              <li>Vision & Mission</li>
-              <li>Our Story</li>
-              <li>Our Leadership</li>
-              <li>Our Quality Policy</li>
-            </ul>
-            <ul>
-              <li>Projects of SKMT</li>
-              <li>Awards and Recognition</li>
-              <li>Facts and Statistics</li>
-              <li>Healthcare Environment Sustainability</li>
-            </ul>
-            <ul>
-              <li>Publications</li>
-              <li>Latest Events</li>
-              <li>Latest News</li>
-              <li>Our IT Services</li>
-            </ul>
           </div>
-        </div>
-        <div class="PatientDiv hidden">
-          <img src="../Assets/patient-2.webp" width="350px" alt="">
-          <div class="links">
-            <ul>
-              <li>View Your Lab Reports</li>
-              <li>Request an Appointment</li>
-              <li>Find a Doctor</li>
-              <li>Find Lab Test</li>
-            </ul>
-            <ul>
-              <li>Patient Information</li>
-              <li>Patient Success Stories</li>
-              <li>Financial Assistance Programme</li>
-              <li>Patient Rights & Responsibilities</li>
-            </ul>
-          </div>
-        </div>
-        <div class="OurNetworkDiv hidden">
-          <img src="../Assets/our-network-banner.webp" width="350px" alt="">
-          <div class="links">
-            
-            <ul>
-              <li><h3>SKMCH&RC, Lahore</h3><hr style="color: red;"></li>
-              <li><h3>Cancer Services</h3><hr style="color: red;"></li>
-              <li>Clinical Services</li>
-              <li>Diagnostic Services</li>
-              <li>Pharmacy</li>
-              <li>Non-Cancer Services</li>
-            </ul>
-            <ul>
-              <li><h3>SKMCH&RC, Peshawar</h3><hr style="color: red;"></li>
-              <li><h3>Cancer Services</h3><hr style="color: red;"></li>
-              <li>Clinical Services</li>
-              <li>Diagnostic Services</li>
-              <li>Pharmacy</li>
-              <li>Non-Cancer Services</li>
-            </ul>
-            <ul>
-              <li><h3>SKMCH&RC, Karachi</h3></li>
-              <li><h4>Laboratory Collection Centres</h4></li>
-              <li><h4>Diagnostic Centers</h4></li>
-              <li><h4>Walk-in Clinics</h4></li>
-            </ul>
-          </div>
-        </div>
-        <div class="HealthcareDiv hidden">
-          <img src="../Assets/healthcare.webp" width="350px" alt="">
-          <div class="links">
-            <ul>
-              <li>Education and Training</li>
-              <li>Nursing Services</li>
-              <li>Shaukat Khanam Institute of Health Sciences</li>
-              <li>Referring Physicians</li>
-            </ul>
-            <ul>
-              <li>Research</li>
-              <li>Cancer Statistics</li>
-              <li>Conferences & Seminars</li>
-              <li>Quality & Patient Safety</li>
-            </ul>
-          </div>
-        </div>
-        <div class="DonorsDiv hidden">
-          <img src="../Assets/donors-1.webp" width="350px" alt="">
-          <div class="links">
-            <ul>
-              <li>Qurbani</li>
-              <li>Zakat</li>
-              <li>Donation</li>
-              <li>Sadqa</li>
-              <li>Donate</li>
-            </ul>
-            <ul>
-              <li>Sponsor a Cancer Patient</li>
-              <li>Donate a Meal</li>
-              <li>Support a Project</li>
-              <li>Sponsorship of Equipment</li>
-              <li>Donation in Kind</li>
-            </ul>
-            <ul>
-              <li>Online Fundraising</li>
-              <li>Corporate Sponsorship & Collaborations</li>
-              <li>Organise Networking & Fundraising Events</li>
-              <li>Support Training & Education</li>
-            </ul>
-          </div>
-        </div>
-        <div class="JoinUsDiv hidden">
-          <img src="../Assets/careers-1.webp" width="350px" alt="">
-          <div class="links">
-            <ul>
-              <li>Careers</li>
-              <li>Elective/Observers</li>
-            </ul>
-            <ul>
-              <li>Volunteer and Internship</li>
-              <li>Shaukat Khanum Tigers</li>
-              <li>Shaukat Khanum Blood Donors Club</li>
-            </ul>
-            <ul>
-              <li>Student Ambassodor Programme</li>
-              <li>Instition Ambassodor Programme</li>
-            </ul>
-          </div>
+        </li>
+      </ul>
+    </nav>
+    <nav class="lowerNavBar">
+      <ul>
+        <li><button class="AboutUsBtn">About Us ﹀</button></li>
+        <li><button class="PatientBtn">Patient & Families ﹀</button></li>
+        <li><button class="OurNetworkBtn">Our Network ﹀</button></li>
+        <li>
+          <button class="HealthcareBtn">
+            Healthcare Professionals & Researchers ﹀
+          </button>
+        </li>
+        <li><button class="DonorsBtn">Donors ﹀</button></li>
+        <li><button class="JoinUsBtn">Join Us ﹀</button></li>
+      </ul>
+    </nav>
+    <div class="nav-Assistant">
+      <div class="AboutUsDiv hidden">
+        <img src="../Assets/AboutUs nav-link.webp" width="350px" alt="" />
+        <div class="links">
+          <ul>
+            <li>Vision & Mission</li>
+            <li>Our Story</li>
+            <li>Our Leadership</li>
+            <li>Our Quality Policy</li>
+          </ul>
+          <ul>
+            <li>Projects of SKMT</li>
+            <li>Awards and Recognition</li>
+            <li>Facts and Statistics</li>
+            <li>Healthcare Environment Sustainability</li>
+          </ul>
+          <ul>
+            <li>Publications</li>
+            <li>Latest Events</li>
+            <li>Latest News</li>
+            <li>Our IT Services</li>
+          </ul>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="carousel-container">
-        <div class="carousel-viewport">
-          <div class="carousel-track" id="carouselTrack">
-            <div class="carousel-slide">
-              <img
-                src="../Assets/SKH Karachi.webp"
-                alt="Mountain landscape"
-              />
-            </div>
-            <div class="carousel-slide">
-              <img
-                src="../Assets/SKH Peshawar.jpg"
-                alt="River and forest"
-              />
-            </div>
-            <div class="carousel-slide">
-              <img
-                src="../Assets/SKH Lahore.webp"
-                alt="Flower field"
-              />
+      <div class="PatientDiv hidden">
+        <img src="../Assets/patient-2.webp" width="350px" alt="" />
+        <div class="links">
+          <ul>
+            <li>View Your Lab Reports</li>
+            <li>Request an Appointment</li>
+            <li>Find a Doctor</li>
+            <li>Find Lab Test</li>
+          </ul>
+          <ul>
+            <li>Patient Information</li>
+            <li>Patient Success Stories</li>
+            <li>Financial Assistance Programme</li>
+            <li>Patient Rights & Responsibilities</li>
+          </ul>
+        </div>
+      </div>
+      <div class="OurNetworkDiv hidden">
+        <img src="../Assets/our-network-banner.webp" width="350px" alt="" />
+        <div class="links">
+          <ul>
+            <li>
+              <h3>SKMCH&RC, Lahore</h3>
+              <hr style="color: red" />
+            </li>
+            <li>
+              <h3>Cancer Services</h3>
+              <hr style="color: red" />
+            </li>
+            <li>Clinical Services</li>
+            <li>Diagnostic Services</li>
+            <li>Pharmacy</li>
+            <li>Non-Cancer Services</li>
+          </ul>
+          <ul>
+            <li>
+              <h3>SKMCH&RC, Peshawar</h3>
+              <hr style="color: red" />
+            </li>
+            <li>
+              <h3>Cancer Services</h3>
+              <hr style="color: red" />
+            </li>
+            <li>Clinical Services</li>
+            <li>Diagnostic Services</li>
+            <li>Pharmacy</li>
+            <li>Non-Cancer Services</li>
+          </ul>
+          <ul>
+            <li>
+              <h3>SKMCH&RC, Karachi</h3>
+            </li>
+            <li>
+              <h4>Laboratory Collection Centres</h4>
+            </li>
+            <li>
+              <h4>Diagnostic Centers</h4>
+            </li>
+            <li>
+              <h4>Walk-in Clinics</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="HealthcareDiv hidden">
+        <img src="../Assets/healthcare.webp" width="350px" alt="" />
+        <div class="links">
+          <ul>
+            <li>Education and Training</li>
+            <li>Nursing Services</li>
+            <li>Shaukat Khanam Institute of Health Sciences</li>
+            <li>Referring Physicians</li>
+          </ul>
+          <ul>
+            <li>Research</li>
+            <li>Cancer Statistics</li>
+            <li>Conferences & Seminars</li>
+            <li>Quality & Patient Safety</li>
+          </ul>
+        </div>
+      </div>
+      <div class="DonorsDiv hidden">
+        <img src="../Assets/donors-1.webp" width="350px" alt="" />
+        <div class="links">
+          <ul>
+            <li>Qurbani</li>
+            <li>Zakat</li>
+            <li>Donation</li>
+            <li>Sadqa</li>
+            <li>Donate</li>
+          </ul>
+          <ul>
+            <li>Sponsor a Cancer Patient</li>
+            <li>Donate a Meal</li>
+            <li>Support a Project</li>
+            <li>Sponsorship of Equipment</li>
+            <li>Donation in Kind</li>
+          </ul>
+          <ul>
+            <li>Online Fundraising</li>
+            <li>Corporate Sponsorship & Collaborations</li>
+            <li>Organise Networking & Fundraising Events</li>
+            <li>Support Training & Education</li>
+          </ul>
+        </div>
+      </div>
+      <div class="JoinUsDiv hidden">
+        <img src="../Assets/careers-1.webp" width="350px" alt="" />
+        <div class="links">
+          <ul>
+            <li>Careers</li>
+            <li>Elective/Observers</li>
+          </ul>
+          <ul>
+            <li>Volunteer and Internship</li>
+            <li>Shaukat Khanum Tigers</li>
+            <li>Shaukat Khanum Blood Donors Club</li>
+          </ul>
+          <ul>
+            <li>Student Ambassodor Programme</li>
+            <li>Instition Ambassodor Programme</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="carousel" id="carousel">
+      <div class="carousel__viewport">
+        <div class="carousel__track" id="carouselTrack">
+          <!-- original slides (3) -->
+          <div class="carousel__slide">
+            <img src="../Assets/SKH Lahore.webp" alt="Mountain lake view">
+            <div class="slide-text">
+              <h1>Shokat Khanam Memorial Cancer Hospital & Research Centre, Lahore</h1>
+              <p>Pakistan's first state-of-the-art cancer hospital inaugurated in 1994</p>
             </div>
           </div>
+          <div class="carousel__slide">
+            <img src="../Assets/SKH Peshawar.jpg" alt="SKH Peshawar">
+            <div class="slide-text">
+              <h1>Shokat Khanam Memorial Cancer Hospital & Research Centre, Peshawar</h1>
+              <p>Saving Cancer Patients since 2015</p>
+            </div>
+          </div>
+          <div class="carousel__slide">
+            <img src="../Assets/SKH Karachi.webp" alt="SKH Karachi">
+            <div class="slide-text">
+              <h1>Shokat Khanam Memorial Cancer Hospital & Research Centre, Karachi</h1>
+              <p>Support the construction of Pakistan's largest cancer hospital being build in DHA City, Karachi</p>
+            </div>
+          </div>
+          <!-- we will inject clones via JS for infinite seamless loop -->
         </div>
-        <div class="carousel-dots" id="carouselDots"></div>
       </div>
-    </main>
-    <script src="script.js"></script>
-  </body>
+      <button class="carousel__btn btn--prev" id="prevBtn" aria-label="Previous slide">❮</button>
+      <button class="carousel__btn btn--next" id="nextBtn" aria-label="Next slide">❯</button>
+    </div>
+    <div>
+      <div >
+        <ul>
+          <li class="btn1"><span>Support Our Cause</span></li>
+          <li class="btn2"><span>Access Your Lab Report(s)</span></li>
+        </ul>
+      </div>
+      <div class="boxes">
+
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>
