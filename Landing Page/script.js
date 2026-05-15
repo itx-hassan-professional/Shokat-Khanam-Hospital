@@ -210,8 +210,6 @@ for(let i = 0; i < NavBtns.length; i++){
     // position track at first real slide (index 1)
     moveToSlide(1, false);   // no transition on init
     startAutoSlide();
-    
-    // optional: adjust on window resize – prevent glitches (track stays)
     window.addEventListener('resize', () => {
       // Recalculate transform after resize to ensure same slide visible
       const offset = -currentIndex * 100;
